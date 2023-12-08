@@ -7,10 +7,12 @@ export const Home = () => {
   const username = userStore((state) => state.username);
 
   const welcomeMessage = `
-  👨‍💻 Congrats on a successful login, ${username}! Welcome to Devtopia! 🌐
+  👨‍💻 Congrats on a successful login!  ${username}! 
+     Welcome to Devtopia! 🌐
 
   Your journey through the maze of authentication has led you to a land where 
-  'null' is not nothing, and every '404' is a hidden opportunity. You've proven 
+  'null' is not nothing, and every '404' 
+  is a hidden opportunity. You've proven 
   your worthiness by bypassing the formidable Login Dragon. Here’s what awaits 
   you in this coder’s paradise:
   - A sandbox where 'undefined' is a badge of honor.
@@ -43,9 +45,6 @@ export const Home = () => {
       <nav>
         <ul className="app-ul">
           <li className="app-li">
-            <Link to="/home">Home</Link>
-          </li>
-          <li className="app-li">
             <button onClick={onLogoutClick}>Sign Out</button>
           </li>
         </ul>
@@ -53,10 +52,15 @@ export const Home = () => {
 
       <div className="message-wrapping">
         <h1 className="heading">{text.heading}</h1>
-        <h2>{text.subheading}</h2>
+        <div className="message" style={{ whiteSpace: 'pre-line' }}>
+          {text.subheading}
+        </div>
+        <ul className="app-ul">
+          <li className="app-li">
+            <button onClick={onLogoutClick}>Sign Out</button>
+          </li>
+        </ul>
       </div>
-      <p>Welcome to the Home Page!</p>
-      {/* Add more content relevant to the home page here */}
     </>
   );
 };
