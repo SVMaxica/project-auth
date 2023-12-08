@@ -43,7 +43,7 @@ body {
 
 .signup-wrapper {
   padding-top: 30px;
-  padding-bottom: 400px;
+  padding-bottom: 700px;
   width: 300px;
   display: flex;
   align-items: center;
@@ -136,9 +136,9 @@ svg {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 800px) {
   .user-login {
-    width: 800px;
+    width: 700px;
    }
  
    svg {

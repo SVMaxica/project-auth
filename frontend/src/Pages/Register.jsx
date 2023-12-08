@@ -41,7 +41,7 @@ export const Register = () => {
       <nav>
         <ul className="app-ul">
           <li className="back-link">
-            <Link to="/sessions">Back</Link>
+            <Link to="/">Back</Link>
           </li>
         </ul>
       </nav>
