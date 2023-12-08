@@ -40,15 +40,12 @@ export const Register = () => {
     <>
       <nav>
         <ul className="app-ul">
-          <li className="app-li">
-            <Link to="/sessions">Login</Link>
-          </li>
-          <li className="app-li">
-            <Link to="/sessions">Sign Up</Link>
+          <li className="back-link">
+            <Link to="/sessions">Back</Link>
           </li>
         </ul>
       </nav>
-      <div>
+      <div className="signup-wrapper" >
         <h2>{text.heading}</h2>
         <p>{text.intro}</p>
         <p>{text.loremIpsum}</p>
